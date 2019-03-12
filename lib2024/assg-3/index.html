@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Assignment 3</title>
+</head>
+<body>
+	<div id="wrapper" class="wrapper">
+		<section id="assg-3-form" class="main-section">
+			<form action="somepage.php" method="post">
+				<div id="fn-container" class="form-elm">
+				<label for="FirstName">First name</label>
+				<input type="text" name="FirstName" id="FirstName" placeholder="Enter your first name here">
+			</div>
+
+				<div id="ln-container" class="form-elm">
+				<label for="LastName">Last name</label>
+				<input type="text" name="LastName" id="LastName" placeholder="Enter your last name here">
+			</div>
+
+			<div id="email-container" class="form-elm">
+				<label for="email">Email</label>
+				<input type="email" name="email" id="email" value="your@mail.com">
+			</div>
+
+			<div id="pass-container" class="form-elm">
+				<label for="pass">Password</label>
+				<input type="password" name="pass" id="pass" required>	
+			</div>
+
+			<div id="introductory-container" class="form-elm">
+				<label for="introtext">Introductory Text</label>
+				<textarea name="introtext" id="introtext" placeholder="Introductory text here.">
+				</textarea>
+			</div>
+
+			<div id="date-container" class="form-elm">
+				<label for="dob">Date of Birth</label>
+				<input type="date" name="dob" id="dob" required>
+			</div>
+
+			<div id="mobile-container" class="form-elm">
+				<label for="mobile-num">Mobile Number</label>
+				<input type="tel" name="mobile-num" id="mobile-num" placeholder="123-456-789" required>
+			</div>
+
+			<div id="radio-container">
+				<p>Gender</p>
+				<label for="female">
+					<input type="radio" name="gender-form" id="female" value="female" checked>
+					Female
+				</label>
+				<label for="male">
+					<input type="radio" name="gender-form" id="male" value="male">
+					Male
+				</label>
+				<label for="neutral">
+					<input type="radio" name="gender-form" id="neutral" value="neutral">
+					Gender neutral
+				</label>
+			</div>
+
+			<fieldset>
+  				<legend>Mailing Address</legend>
+
+  				<div>
+   					<label for="street-address">Street Address</label>
+   					<input type="text" name="street-address" id="street-address">
+  				</div>
+ 				<div>
+    				<label for="city">City</label>
+    				<input type="text" name="city" id="city">
+  				</div>
+  				<div id="prov-drop-container" class="form-elm">
+  					<label for="province">Province</label>
+  					<select name="province" id="province">
+  						<option>Alberta</option>
+    					<option>British Columbia</option>
+    					<option>Manitoba</option>
+    					<option>New Brunswick</option>
+    					<option>Newfoundland and Labrador</option>
+    					<option>Northwest Territories</option>
+    					<option>Nova Scotia</option>
+    					<option>Nunavut</option>
+    					<option>Ontario</option>
+    					<option>Prince Edward Island</option>
+    					<option>Quebec</option>
+    					<option>Saskatchewan</option>
+    					<option>Yukon</option>
+    				</select>
+  				</div>
+  				<div id="country-drop-container" class="form-elm">
+    				<label for="country">Country</label>
+    				<select name="country" id="country">
+    					<option>Argentina</option>
+    					<option>Brazil</option>
+    					<option>Canada</option>
+    					<option>Denmark</option>
+    					<option>France</option>
+    					<option>Germany</option>
+    					<option>Japan</option>
+    					<option>Lebanon</option>
+    					<option>Mexico</option>
+    					<option>Norway</option>
+    					<option>Philippines</option>
+    					<option>Russia</option>
+    					<option>Spain</option>
+    					<option>Turkey</option>
+    					<option>United States</option>
+    					<option>Zambia</option>
+    				</select>
+  				</div>
+  				<div>
+   					<label for="postal-code">Postal Code</label>
+    				<input type="text" name="postal-code" id="postal-code">
+  				</div>
+			</fieldset>
+
+			<fieldset>
+				<legend>What Are Your Hobbies/Interests</legend>
+				<div>
+					<label for="scrap">
+						Scrapbooking
+						<input type="checkbox" name="scrap" id="scrap" checked>
+					</label>
+					<label for="knit">
+						Knitting
+						<input type="checkbox" name="knit" id="knit" checked>
+					</label>
+				</div>
+			</fieldset>
+
+			<button type="submit">Submit</button>
+			<button type="reset">Reset</button>
+
+			</form>	
+		</section>
+	</div>	
+
+</body>
+</html>
