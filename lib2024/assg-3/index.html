@@ -1,133 +1,197 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<title>Assignment 3</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/form.css">
+	
 </head>
 <body>
 	<div id="wrapper" class="wrapper">
 		<section id="assg-3-form" class="main-section">
+			<h1>Registration Form</h1>
 			<form action="somepage.php" method="post">
-				<div id="fn-container" class="form-elm">
-				<label for="FirstName">First name</label>
-				<input type="text" name="FirstName" id="FirstName" placeholder="Enter your first name here">
-			</div>
 
-				<div id="ln-container" class="form-elm">
-				<label for="LastName">Last name</label>
-				<input type="text" name="LastName" id="LastName" placeholder="Enter your last name here">
-			</div>
+				<fieldset>
+					<legend>Name and Date of Birth</legend>
+					<div id="fn-container" class="form-elm">
+						<label for="FirstName">First name</label>
+						<input type="text" name="FirstName" id="FirstName" placeholder="Enter your first name here" required>
+					</div>
 
-			<div id="email-container" class="form-elm">
-				<label for="email">Email</label>
-				<input type="email" name="email" id="email" value="your@mail.com">
-			</div>
+					<div id="ln-container" class="form-elm">
+						<label for="LastName">Last name</label>
+						<input type="text" name="LastName" id="LastName" placeholder="Enter your last name here" required>
+					</div>
 
-			<div id="pass-container" class="form-elm">
-				<label for="pass">Password</label>
-				<input type="password" name="pass" id="pass" required>	
-			</div>
+					<div id="date-container" class="form-elm">
+						<label for="dob">Date of Birth</label>
+						<input type="date" name="dob" id="dob" required>
+					</div>
+				</fieldset>
 
-			<div id="introductory-container" class="form-elm">
-				<label for="introtext">Introductory Text</label>
-				<textarea name="introtext" id="introtext" placeholder="Introductory text here.">
-				</textarea>
-			</div>
+				<fieldset>
+				<legend>Gender</legend>
+					<div id="radio-container" class="form-elm">
+						<label for="female">
+						<input type="radio" name="gender-form" id="female" value="female" checked>
+						Female
+						</label>
 
-			<div id="date-container" class="form-elm">
-				<label for="dob">Date of Birth</label>
-				<input type="date" name="dob" id="dob" required>
-			</div>
+						<label for="male">
+						<input type="radio" name="gender-form" id="male" value="male">
+						Male
+						</label>
 
-			<div id="mobile-container" class="form-elm">
-				<label for="mobile-num">Mobile Number</label>
-				<input type="tel" name="mobile-num" id="mobile-num" placeholder="123-456-789" required>
-			</div>
+						<label for="neutral">
+						<input type="radio" name="gender-form" id="neutral" value="neutral">
+						Gender neutral
+						</label>
+					</div>
+				</fieldset>
 
-			<div id="radio-container">
-				<p>Gender</p>
-				<label for="female">
-					<input type="radio" name="gender-form" id="female" value="female" checked>
-					Female
-				</label>
-				<label for="male">
-					<input type="radio" name="gender-form" id="male" value="male">
-					Male
-				</label>
-				<label for="neutral">
-					<input type="radio" name="gender-form" id="neutral" value="neutral">
-					Gender neutral
-				</label>
-			</div>
+				<fieldset>
+				<legend>Contact Information</legend>
+					<div id="email-container" class="form-elm">
+						<label for="email">Email</label>
+						<input type="email" name="email" id="email" value="your@mail.com">
+					</div>
 
-			<fieldset>
+					<div id="mobile-container" class="form-elm">
+						<label for="mobile-num">Mobile Number</label>
+						<input type="tel" name="mobile-num" id="mobile-num" placeholder="123-456-7890">
+					</div>
+
+					<div id="web-container" class="form-elm">
+						<label for="ur">Your Website URL:</label>
+						<input type="url" name="ur" id="ur" placeholder="yourweb.com">
+						
+					</div>
+				</fieldset>
+
+				<fieldset>
   				<legend>Mailing Address</legend>
 
-  				<div>
-   					<label for="street-address">Street Address</label>
-   					<input type="text" name="street-address" id="street-address">
-  				</div>
- 				<div>
-    				<label for="city">City</label>
-    				<input type="text" name="city" id="city">
-  				</div>
-  				<div id="prov-drop-container" class="form-elm">
-  					<label for="province">Province</label>
-  					<select name="province" id="province">
-  						<option>Alberta</option>
-    					<option>British Columbia</option>
-    					<option>Manitoba</option>
-    					<option>New Brunswick</option>
-    					<option>Newfoundland and Labrador</option>
-    					<option>Northwest Territories</option>
-    					<option>Nova Scotia</option>
-    					<option>Nunavut</option>
-    					<option>Ontario</option>
-    					<option>Prince Edward Island</option>
-    					<option>Quebec</option>
-    					<option>Saskatchewan</option>
-    					<option>Yukon</option>
-    				</select>
-  				</div>
-  				<div id="country-drop-container" class="form-elm">
-    				<label for="country">Country</label>
-    				<select name="country" id="country">
-    					<option>Argentina</option>
-    					<option>Brazil</option>
-    					<option>Canada</option>
-    					<option>Denmark</option>
-    					<option>France</option>
-    					<option>Germany</option>
-    					<option>Japan</option>
-    					<option>Lebanon</option>
-    					<option>Mexico</option>
-    					<option>Norway</option>
-    					<option>Philippines</option>
-    					<option>Russia</option>
-    					<option>Spain</option>
-    					<option>Turkey</option>
-    					<option>United States</option>
-    					<option>Zambia</option>
-    				</select>
-  				</div>
-  				<div>
-   					<label for="postal-code">Postal Code</label>
-    				<input type="text" name="postal-code" id="postal-code">
-  				</div>
-			</fieldset>
+  					<div id="str-container" class="form-elm">
+   						<label for="street-address">Street Address</label>
+   						<input type="text" name="street-address" id="street-address" placeholder="123 Any Street">
+  					</div>
 
-			<fieldset>
-				<legend>What Are Your Hobbies/Interests</legend>
-				<div>
-					<label for="scrap">
-						Scrapbooking
-						<input type="checkbox" name="scrap" id="scrap" checked>
-					</label>
-					<label for="knit">
-						Knitting
-						<input type="checkbox" name="knit" id="knit" checked>
-					</label>
-				</div>
-			</fieldset>
+ 					<div id="city-container" class="form-elm">
+    					<label for="city">City</label>
+    					<input type="text" name="city" id="city" placeholder="City Name">
+  					</div>
+
+  					<div id="prov-drop-container" class="form-elm">
+  						<label for="province">Province</label>
+  						<select name="province" id="province">
+  							<optgroup label="Province">
+	  							<option>Alberta</option>
+	    						<option>British Columbia</option>
+	    						<option>Manitoba</option>
+	    						<option>New Brunswick</option>
+	    						<option>Newfoundland and Labrador</option>
+	    						<option>Northwest Territories</option>
+	    						<option>Nova Scotia</option>
+	    						<option>Nunavut</option>
+	    						<option>Ontario</option>
+	    						<option>Prince Edward Island</option>
+	    						<option>Quebec</option>
+	    						<option>Saskatchewan</option>
+	    						<option>Yukon</option>
+	    					</optgroup>
+    					</select>
+  					</div>
+
+  					<div id="country-drop-container" class="form-elm">
+    					<label for="country">Country</label>
+    					<select name="country" id="country">
+    						<optgroup label="Country">
+	    						<option>Argentina</option>
+	    						<option>Brazil</option>
+	    						<option>Canada</option>
+	    						<option>Denmark</option>
+	    						<option>France</option>
+	    						<option>Germany</option>
+	    						<option>India</option>
+	    						<option>Japan</option>
+	    						<option>Kenya</option>
+	    						<option>Lebanon</option>
+	    						<option>Mexico</option>
+	    						<option>Norway</option>
+	    						<option>Philippines</option>
+	    						<option>Russia</option>
+	    						<option>Spain</option>
+	    						<option>Sweden</option>
+	    						<option>Turkey</option>
+	    						<option>United Kingdom</option>
+	    						<option>United States</option>
+	    						<option>Zambia</option>
+	    					</optgroup>
+    					</select>
+  					</div>
+
+  					<div id="pc-container" class="form-elm">
+   						<label for="postal-code">Postal Code</label>
+    					<input type="text" name="postal-code" id="postal-code" placeholder="A1A 1A1" required>
+  					</div>
+				</fieldset>
+
+				<fieldset>
+					<legend>What Are Your Hobbies/Interests</legend>
+					<div id="-container" class="form-elm">
+						<label for="scrap">
+							Scrapbooking
+						<input type="checkbox" name="scrap" id="scrap" value="scrap">
+						</label>
+
+						<label for="knit">
+							Knitting
+						<input type="checkbox" name="knit" id="knit" value="knit">
+						</label>
+
+						<label for="model">
+							Model Trains
+						<input type="checkbox" name="model" id="model" value="model">
+						</label>
+
+						<label for="read">
+							Reading
+						<input type="checkbox" name="read" id="read" value="read">
+						</label>
+
+						<label for="camp">
+							Camping
+						<input type="checkbox" name="camp" id="camp" value="camp">
+						</label>
+
+						<label for="fish">
+							Fishing
+						<input type="checkbox" name="fish" id="fish" value="fish">
+						</label>
+
+					</div>
+				</fieldset>
+
+				<fieldset>
+					<legend>Introduce Yourself</legend>
+					<div id="intro-container" class="form-elm">
+						<textarea name="introtext" id="introtext" placeholder="Introductory text here."></textarea>
+					</div>
+				</fieldset>
+
+				<fieldset>
+					<legend>Create a Password</legend>
+					<div id="pass-container" class="form-elm">
+						<label for="pass">Password</label>
+						<input type="password" name="pass" id="pass" required>	
+					</div>
+
+					<div id="second-pass-container" class="form-elm">
+						<label for="pass">Confirm Password</label>
+						<input type="password" name="pass" id="second-pass" required>	
+					</div>
+				</fieldset>
 
 			<button type="submit">Submit</button>
 			<button type="reset">Reset</button>

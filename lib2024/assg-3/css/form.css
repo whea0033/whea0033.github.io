@@ -1,0 +1,22 @@
+html {
+	background-color: #d1fff9;
+}
+
+h1 {
+	color: #324877;
+}
+
+fieldset {
+	width: 600px;
+}
+legend {
+	color: #2d5e2b;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+button {
+	background-color: #5df75d;
+	font-size: 15px;
+}
+
