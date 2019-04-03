@@ -1,0 +1,197 @@
+@charset "utf-8";
+@import url('../fonts/dejavuserif_regular_macroman/stylesheet.css');
+@import url('https://fonts.google.com/specimen/Open+Sans');
+
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*CSS clearfix*/
+.clearfix:before
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.desktop-nav {
+	width: calc(100% - 100px);
+	max-width: 960px;
+}
+
+
+
+#container {
+	width: 960px;
+	background: #7cc576;
+	margin: 0 auto; 
+}
+
+h1 {
+	position: relative;
+	top: 40px;
+	left: 240px;
+	font-size: 50px;
+}
+
+h2 {
+	font-size: 30px;
+	margin: 10px;
+}
+
+h3 {
+	font-size: 20px;
+	margin: 10px;
+}
+h1, h2, h3 {
+	font-weight: bold;
+	font-family: 'dejavuserif_regular_macroman', serif;
+	color: #000500
+}
+
+p {
+	font-weight: normal;
+	font-family: 'Open+Sans', sans-serif;
+	color: #080200;
+}
+
+#site-header {
+	width: 100%;
+	height: 232px;
+	margin: 0 auto;
+}
+
+.logo {
+	position: absolute;
+	top: 10px;
+	float: left;
+
+}
+
+.main-nav li {
+	box-sizing: border-box;
+	width: 25%;
+	padding: 10px;
+	height: 65px;
+	border-radius: 5px;
+	float: left;
+	margin-top: 100px;
+}
+.main-nav li a {
+	background: #6dcff6;
+	display:block;
+	padding: 15px;
+	margin:0 auto;
+}
+ 
+ li{
+ 	text-align: center;
+ }
+
+#main-wrapper {
+	width: 100%;
+	height: 680px;
+	background: #f4f5f7;
+	background-image: url(../img/oriental.png);
+	margin: 0 auto;
+}
+
+#main-text {
+	width: 64%;
+	height: 420px;
+	float: left;
+	margin: 10px;
+}
+
+#sidebar {
+	width: 32%;
+	height: 345px;
+	float: right;
+	margin-top: 65px;
+}
+
+#img-container {
+	width: 100%;
+	height: 220px;
+	margin: 10px;
+}
+
+article#img-container {
+	display: inline-block;
+}
+
+figure {
+	width: 19%;
+	height: 140px;
+	float: left;
+	margin-left: 60px;
+	margin-top: auto;
+	text-align: center; 
+	box-sizing: border-box;
+}
+	
+#site-footer {
+	width: 100%;
+	height: 108px;
+	margin: auto;
+	clear: both;
+}
+
+#site-footer p {
+	float: left;
+	margin-top: 50px;
+}
+
+#site-footer img {
+	position: relative;
+	top: 30px;
+	padding: 8px;
+	float: right;
+}
