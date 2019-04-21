@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Final</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/fonts.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+<body>
+	<div id="container">
+		<header id="site-header" class="site-header">
+			<h1 class="logo">MY LOGO</h1>
+
+			<nav class="main-nav-container desktop-nav">
+				<ul class="main-nav">
+					<li>
+						<a href="home.html">Home</a>
+					</li>
+					<li>
+						<a href="about.html">About</a>
+					</li>
+					<li>
+						<a href="work.html">Schedule</a>
+					</li>
+					<li>
+						<a href="work.html">Portfolio</a>
+					</li>
+					<li>
+						<a href="contact.html">Contact</a>
+					</li>		
+				</ul>
+			</nav>	
+			
+		</header>
+
+		<main id="main-wrapper" class="main-wrapper clearfix">
+			<div class="content">
+				<article id="main-text" class="text">
+					<h2>About</h2>
+					<a href="#img1">
+  						<img src="img/beach.jpg" alt="beach in figure" width="326" height="232" class="thumbnail">
+					</a>
+					<a href="#_" class="lightbox" id="img1">
+ 						<img src="img/beach.jpg" alt="beach in figure">
+					</a>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Velit scelerisque in dictum non consectetur a erat nam. Facilisis sed odio morbi quis. Nisi scelerisque eu ultrices vitae auctor. Dictumst vestibulum rhoncus est pellentesque elit. Bibendum arcu vitae elementum curabitur vitae nunc sed velit dignissim. Quis hendrerit dolor magna eget est lorem ipsum dolor. Id neque aliquam vestibulum morbi blandit cursus. Lectus magna fringilla urna porttitor rhoncus dolor purus. Arcu cursus vitae congue mauris rhoncus aenean.
+					</p>
+					<p>
+						Proin libero nunc consequat interdum varius sit amet mattis vulputate. Maecenas pharetra convallis posuere morbi leo urna molestie at. Aliquam malesuada bibendum arcu vitae elementum. Ut enim blandit volutpat maecenas volutpat. In arcu cursus euismod quis viverra nibh cras pulvinar. Tellus at urna condimentum mattis. Dictum at tempor commodo ullamcorper a. Enim neque volutpat ac tincidunt vitae semper quis lectus nulla. Augue lacus viverra vitae congue eu consequat. Pellentesque dignissim enim sit amet venenatis. Ut eu sem integer vitae justo eget magna fermentum. Purus non enim praesent elementum facilisis leo. Ac turpis egestas sed tempus urna et. Egestas integer eget aliquet nibh praesent tristique magna. 
+					</p>
+				</article>
+
+				
+
+				<article id="schedule" class="table">
+					<h2>Schedule</h2>
+					<div id="json_table" style="overflow-x:auto;">
+						
+					</div>
+				</article>
+
+				<div class="profile-container">
+					<article id="pro-form" class="form">
+						<h2>Edit Profile</h2>
+						<form id="form">
+							<div id="n-container" class="form-elm">
+								<label for="name">Name</label>
+								<input type="text" name="name" id="name" placeholder="Enter your name here" required>
+							</div>
+
+							<div id="email-container" class="form-elm">
+								<label for="email">Email</label>
+								<input type="text" name="email" id="email" placeholder="you@email.com" required>
+							</div>
+
+							<div id="address-container" class="form-elm">
+								<label for="address">Adress</label>
+								<input type="text" name="address" id="address" placeholder="123 Any Street" required>
+							</div>
+
+							<div id="city-container" class="form-elm">
+								<label for="city">City</label>
+								<input type="text" name="city" id="city" placeholder="Enter your city here" required>
+							</div>
+
+							<div id="prov-drop-container" class="form-elm">
+								<label for="province">Province</label>
+								<select name="province" id="province">
+									<optgroup label="Province">
+										<option>Select Province</option>
+										<option value="AB">Alberta</option>
+										<option value="BC">British Columbia</option>
+										<option value="MB">Manitoba</option>
+										<option value="NB">New Brunswick</option>
+										<option value="NL">Newfoundland and Labrador</option>
+										<option value="NT">Northwest Territories</option>
+										<option value="NS">Nova Scotia</option>
+										<option value="NU">Nunavut</option>
+										<option value="ON">Ontario</option>
+										<option value="PE">Prince Edward Island</option>
+										<option value="QC">Quebec</option>
+										<option value="SK">Saskatchewan</option>
+										<option value="YT">Yukon</option>
+									</optgroup>
+								</select>
+							</div>
+
+							<div id="pc-container" class="form-elm">
+								<label for="pc">Postal Code</label>
+								<input type="text" pattern="[A-Za-z][0-9][A-Za-z] [0-9][A-Za-z][0-9]" name="pc" id="pc" 
+								placeholder="A1A 1A1" required>
+							</div>
+
+
+							<input type="submit" value="submit">
+						</form>
+					</article>
+
+					<aside id="profile" class="info">
+						<h2>Profile Info</h2>
+						<div class="shadow-box">
+							<span style="font-size: 150px">
+								<i class="fas fa-user-circle"></i>
+							</span>
+							<h3 id="profile-name" style="color: #70a9b2">John Doe</h3>
+
+							<p id="profile-email">JohnDoe@algonquincollege.com</p>
+							<p id="profile-address">1385 Woodroffe Ave.</p>
+							<p id="profile-city">Nepean</p>
+							<p id="profile-province">ON</p>
+							<p id="profile-pc">K2G 1V8</p>
+							
+							<span style="font-size: 25px">
+								<i class="far fa-envelope"></i>
+							</span>
+							
+						</div>
+					</aside>
+				</div>
+			</div>
+		</main>
+
+		<footer id="site-footer" class="site-footer">
+			<div class="footer-content">
+				<section>
+					<h3>Quick Links</h3>
+					<br>
+					<h4>Schedule</h4>
+					<h4>About</h4>
+					<h4>Portfolio</h4>
+					<h4>Contact</h4>
+				</section>
+				<section>
+					<h3>Follow Us</h3>
+					<!-- https://fontawesome.com/how-to-use/on-the-web/styling/stacking-icons -->
+					<br>
+					<a href="https://www.facebook.com/">
+						<span class="fa-stack fa-2x facebook">
+							<i class="fas fa-circle fa-stack-2x"></i>
+							<i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+						</span>
+					</a>
+
+					<a href="https://www.youtube.com/">
+						<span class="fa-stack fa-2x youtube">
+							<i class="fas fa-circle fa-stack-2x"></i>
+							<i class="fab fa-youtube fa-stack-1x fa-inverse"></i>
+						</span>
+					</a>
+					
+					<a href="https://twitter.com/">
+						<span class="fa-stack fa-2x twitter">
+							<i class="fas fa-circle fa-stack-2x"></i>
+							<i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+						</span>
+					</a>
+					
+				</section>
+
+				<section>
+					<h3>Address</h3>
+					<br>
+					<p>
+						1385 Woodroffe Ave.<br>
+						Nepean, ON K2G 1V8<br>
+						Canada
+					</p>
+				</section>
+			</div>
+
+		</footer>
+		
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/scripts.js"></script>
+</body>
+</html>
